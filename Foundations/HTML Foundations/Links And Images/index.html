@@ -13,10 +13,29 @@
         <!--
         Anchor tag. Used for links to other websites and local files. The href
         attribute (hyperlink reference) specifies the destination we want our
-        link to go to. The body is the text of the link
+        link to go to. The body is the text of the link.
+        Absolute link is of the form: protocol://domain/path
         -->
         <a href="https://www.theodinproject.com/about">
-            Click me
+            Click Me
         </a>
+        <!--
+        Relative link relative to current directory (the './' is not really
+        needed here but its nice to have for clarity)
+        -->
+        <a href="./pages/about.html">
+            About Page
+        </a>
+        <!--
+        Embeds an image also with absolute or relative links. Absolute for
+        for direct links to an image located on a site or relative for images
+        in your local filesystem.
+        'alt' is the text to describe the image which is used in place of the
+        image if the image cannot be loaded and by screen readers for the
+        visually impaired
+        -->
+        <img src="https://www.theodinproject.com/mstile-310x310.png"
+            alt="The Odin Project Logo">
+        <img src="images/dog.jpg" alt="Dog">
     </body>
 </html>
