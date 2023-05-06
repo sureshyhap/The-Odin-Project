@@ -1,0 +1,19 @@
+/* Universal selector. Applies to ALL elements */
+* {
+    color: purple;
+}
+
+/* Type selector. Applies to all tags with the given type */
+div {
+    color: white;
+}
+
+/* Class selector. Applies to all tags with the matching class attribute */
+.alert-text {
+    color: red;
+}
+
+/* Id selector. Applies to the unique element with the matching id attribute */
+#title {
+    background-color: red;
+}
