@@ -12,11 +12,37 @@
         <div>Hello again!</div>
         <p>Hi ...</p>
         <div>Okay, bye.</div>
+        <!--
+        class attribute used to alter tag using CSS. The same class can reused
+        (and usually should be) reused by different tags
+        -->
         <div class="alert-text">
             Please agree to our terms of service.
         </div>
+        <!--
+        id attribute is a unique CSS identifier so that this specific element
+        can be edited. Must be unique (1-1 with this particular tag)
+        -->
         <div id="title">
             My Awesome 90's page
         </div>
+        <div class="read">
+            Read example text
+        </div>
+        <div class="unread">
+            Unread example text
+        </div>
+        <!-- 
+        Commented out because not good to have class name same as id name which
+        would happen with the following code after this
+        <div class="subsection header">Latest Posts</div>
+        <p class="subsection preview">
+            This is where a preview of a post might go.
+        </p>
+        -->
+        <div class="subsection header">Latest Posts</div>
+        <p class="subsection" id="preview">
+            This is where a preview of a post might go.
+        </p>
     </body>
 </html>
