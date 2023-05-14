@@ -12,6 +12,7 @@
         <div>Hello again!</div>
         <p>Hi ...</p>
         <div>Okay, bye.</div>
+
         <!--
         class attribute used to alter tag using CSS. The same class can reused
         (and usually should be) reused by different tags
@@ -19,6 +20,7 @@
         <div class="alert-text">
             Please agree to our terms of service.
         </div>
+
         <!--
         id attribute is a unique CSS identifier so that this specific element
         can be edited. Must be unique (1-1 with this particular tag)
@@ -26,6 +28,7 @@
         <div id="title">
             My Awesome 90's page
         </div>
+
         <div class="read">
             Read example text
         </div>
@@ -40,9 +43,17 @@
             This is where a preview of a post might go.
         </p>
         -->
+
         <div class="subsection header">Latest Posts</div>
         <p class="subsection" id="preview">
             This is where a preview of a post might go.
         </p>
+
+        <div class="ancestor">
+            <!--The descendant combinator will apply to this element-->
+            <div class="contents">Inside ancestor</div>
+        </div>
+        <!--The descendant combinator will NOT apply to this element-->
+        <div class="contents">Outside ancestor</div>
     </body>
 </html>

@@ -18,8 +18,9 @@ div {
     background-color: red;
 }
 
-/* Grouping selector. The CSS rules apply to every element with class
-   'read' and class 'unread'
+/* 
+    Grouping selector. The CSS rules apply to every element with class
+    'read' and class 'unread'
 */
 .read,
 .unread {
@@ -35,17 +36,27 @@ div {
     /* several declarations unique to .unread elements */
 }
 
-/* Chaining selectors applies to all elements with both subsection and
-   header classes (An intersection of sets) 
+/* 
+    Chaining selectors applies to all elements with both subsection and
+    header classes (An intersection of sets) 
 */
 .subsection.header {
     color: red;
 }
 
-/* Mostly for readability because #preview already uniquely
-   identifies element. Helps by self-documenting that the preview id
-   exists in some subsection 
+/* 
+    Mostly for readability because #preview already uniquely
+    identifies element. Helps by self-documenting that the preview id
+    exists in some subsection 
 */
 .subsection#preview {
     color: blue;
+}
+
+/*
+    If an element has a 'contents' class and resides inside of an
+    element that has a 'ancestor' class, this rule will apply
+*/
+.ancestor .contents {
+    background-color: green;
 }
