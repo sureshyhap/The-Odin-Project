@@ -60,3 +60,44 @@ div {
 .ancestor .contents {
     background-color: green;
 }
+
+/* Color named by keyword */
+.color1 {
+    color: transparent;
+    background-color: red;
+}
+
+/* Color named by hex value */
+.color2 {
+    color: #ff00ff;
+}
+
+/* Color named by rgb value */
+.color3 {
+    color: rgb(255, 100, 50);
+}
+
+/* 
+    Color named by hsl value. HSL stands for hue (degree on the color wheel
+    from 0 to 360 with 0 or 360 being red, 120 is green, and 240 is blue),
+    saturation (a percentage with 0% being a shade of gray and 100% being
+    full color), and lightness (a percentage with 0% being black and 100%
+    being white)
+*/    
+.color4 {
+    color: hsl(120, 60%, 70%);
+}
+
+p {
+    /* 
+        First is the font you want but if the browser does not support it,
+        the second will be a fallback. If the second is not supported...
+    */
+    font-family: "Times New Roman", sans-serif;
+    /* The size of the font */
+    font-size: 25px;
+    /* The boldness of the font. Can use keywords like 'bold' for the value */
+    font-weight: 700;
+    /* Horizontal alignment of text within an element here to be centered */
+    text-align: center;
+}
