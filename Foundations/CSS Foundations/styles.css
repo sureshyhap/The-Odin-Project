@@ -19,8 +19,8 @@ div {
 }
 
 /* 
-    Grouping selector. The CSS rules apply to every element with class
-    'read' and class 'unread'
+Grouping selector. The CSS rules apply to every element with class
+'read' and class 'unread'
 */
 .read,
 .unread {
@@ -37,25 +37,25 @@ div {
 }
 
 /* 
-    Chaining selectors applies to all elements with both subsection and
-    header classes (An intersection of sets) 
+Chaining selectors applies to all elements with both subsection and
+header classes (An intersection of sets) 
 */
 .subsection.header {
     color: red;
 }
 
 /* 
-    Mostly for readability because #preview already uniquely
-    identifies element. Helps by self-documenting that the preview id
-    exists in some subsection 
+Mostly for readability because #preview already uniquely
+identifies element. Helps by self-documenting that the preview id
+exists in some subsection 
 */
 .subsection#preview {
     color: blue;
 }
 
 /*
-    If an element has a 'contents' class and resides inside of an
-    element that has a 'ancestor' class, this rule will apply
+If an element has a 'contents' class and resides inside of an
+element that has a 'ancestor' class, this rule will apply
 */
 .ancestor .contents {
     background-color: green;
@@ -78,11 +78,11 @@ div {
 }
 
 /* 
-    Color named by hsl value. HSL stands for hue (degree on the color wheel
-    from 0 to 360 with 0 or 360 being red, 120 is green, and 240 is blue),
-    saturation (a percentage with 0% being a shade of gray and 100% being
-    full color), and lightness (a percentage with 0% being black and 100%
-    being white)
+Color named by hsl value. HSL stands for hue (degree on the color wheel
+from 0 to 360 with 0 or 360 being red, 120 is green, and 240 is blue),
+saturation (a percentage with 0% being a shade of gray and 100% being
+full color), and lightness (a percentage with 0% being black and 100%
+being white)
 */    
 .color4 {
     color: hsl(120, 60%, 70%);
@@ -90,8 +90,8 @@ div {
 
 p {
     /* 
-        First is the font you want but if the browser does not support it,
-        the second will be a fallback. If the second is not supported...
+    First is the font you want but if the browser does not support it,
+    the second will be a fallback. If the second is not supported...
     */
     font-family: "Times New Roman", sans-serif;
     /* The size of the font */
@@ -101,3 +101,23 @@ p {
     /* Horizontal alignment of text within an element here to be centered */
     text-align: center;
 }
+
+img {
+    /* 
+    Forces width to be 500px but allows height to be whatever needed to
+    maintain the aspect ratio
+    */
+    height: auto;
+    width: 500px;
+}
+
+/*
+Even if you don't want to change the proportions of an image, still put these
+at least so that the browser reserves space on the page for the image while it
+loads. If you don't have these, then it will drastically shift other elements
+when it does load since it wasn't reserved space beforehand
+img {
+    height: auto;
+    width: auto;
+}
+*/
