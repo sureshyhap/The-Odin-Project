@@ -1,0 +1,77 @@
+/*
+    The following two rules (1 and 2) apply to:
+
+    <div class="list subsection"></div>
+
+    but since rule 2 uses more selectors, it is considered more specific
+    and so 
+    
+    color: red;
+    
+    will take precedence
+*/
+/* Rule 1 */
+.subsection {
+    color: blue;
+}
+
+/* Rule 2 */
+.main .list {
+    color: red;
+}
+
+/****************************************************************************/
+/*
+    The following two rules (3 and 4) apply to:
+
+    <div class="list" id="subsection"></div>
+
+    Despite rule 4 having more class selectors than ID selectors, rule 3
+    is more specific because ID beats class so 
+
+    color: blue; 
+    
+    would take precedence
+*/
+/* Rule 3 */
+#subsection {
+    color: blue;
+}
+
+/* Rule 4 */
+.main .list {
+    color: red;
+}
+
+/****************************************************************************/
+/*
+    Here both rules are using ID and class selectors, so neither rule is
+    using a more specific selector than the other. The cascade then checks
+    the amount of each selector type. Both rules only have one ID selector,
+    but rule 6 has more class selectors, so rule 6 has a higher specificity
+*/
+/* Rule 5 */
+/* 
+    Means an element with class list is nested inside an element with 
+    id subsection
+*/
+#subsection .list {
+    background-color: yellow;
+    color: blue;
+}
+/* Rule 6 */
+#subsection .main .list {
+    color: red;
+}
+/* 
+    NOTE: While the
+
+    color: red;
+
+    declaration would take precedence, the 
+    
+    background-color: yellow;
+
+    declaration would still be applied since there's no conflicting
+    declaration for it
+*/
