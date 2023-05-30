@@ -1,0 +1,7 @@
+#identifier {
+    background-color: red;
+}
+
+.subsection#identifier {
+    background-color: blue;
+}

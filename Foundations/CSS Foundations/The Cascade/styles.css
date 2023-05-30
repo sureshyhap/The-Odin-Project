@@ -1,14 +1,14 @@
 /*
-    The following two rules (1 and 2) apply to:
+The following two rules (1 and 2) apply to:
 
-    <div class="list subsection"></div>
+<div class="list subsection"></div>
 
-    but since rule 2 uses more selectors, it is considered more specific
-    and so 
+but since rule 2 uses more selectors, it is considered more specific
+and so 
     
-    color: red;
+color: red;
     
-    will take precedence
+will take precedence
 */
 /* Rule 1 */
 .subsection {
@@ -22,16 +22,16 @@
 
 /****************************************************************************/
 /*
-    The following two rules (3 and 4) apply to:
+The following two rules (3 and 4) apply to:
 
-    <div class="list" id="subsection"></div>
+<div class="list" id="subsection"></div>
 
-    Despite rule 4 having more class selectors than ID selectors, rule 3
-    is more specific because ID beats class so 
+Despite rule 4 having more class selectors than ID selectors, rule 3
+is more specific because ID beats class so 
 
-    color: blue; 
+color: blue; 
     
-    would take precedence
+would take precedence
 */
 /* Rule 3 */
 #subsection {
@@ -45,15 +45,15 @@
 
 /****************************************************************************/
 /*
-    Here both rules are using ID and class selectors, so neither rule is
-    using a more specific selector than the other. The cascade then checks
-    the amount of each selector type. Both rules only have one ID selector,
-    but rule 6 has more class selectors, so rule 6 has a higher specificity
+Here both rules are using ID and class selectors, so neither rule is
+using a more specific selector than the other. The cascade then checks
+the amount of each selector type. Both rules only have one ID selector,
+but rule 6 has more class selectors, so rule 6 has a higher specificity
 */
 /* Rule 5 */
 /* 
-    Means an element with class list is nested inside an element with 
-    id subsection
+Means an element with class list is nested inside an element with 
+id subsection
 */
 #subsection .list {
     background-color: yellow;
@@ -64,14 +64,102 @@
     color: red;
 }
 /* 
-    NOTE: While the
+NOTE: While the
 
-    color: red;
+color: red;
 
-    declaration would take precedence, the 
+declaration would take precedence, the 
     
-    background-color: yellow;
+background-color: yellow;
 
-    declaration would still be applied since there's no conflicting
-    declaration for it
+declaration would still be applied since there's no conflicting
+declaration for it
 */
+
+/****************************************************************************/
+/*
+These have the same amount of ID selectors but rule 8 has a class selector
+too so it overrides Rule 7
+*/
+/* Rule 7 */
+#identifier {
+    background-color: red;
+}
+
+/* Rule 8 */
+.subsection#identifier {
+    background-color: blue;
+}
+
+/****************************************************************************/
+/* 
+These have the same specificity because they both involve two class
+selectors; one uses chaining selectors while the other uses descendant
+combinators
+*/
+/* Rule 9 */
+.class.second-class {
+    font-size: 12px;
+}
+
+/* Rule 10 */
+.class .second-class {
+    font-size: 24px;
+}
+
+/****************************************************************************/
+/* These have the same specificity for similar reasons as 9 and 10 above
+/* Rule 11 */
+.class.second-class {
+    font-size: 12px;
+}
+
+/* Rule 12 */
+/* 
+'>' is the child combinator. It is similar to the descendant combinator but
+.second-class not only must be a descendant of .class but it must be its child
+*/
+.class > .second-class {
+    font-size: 24px;
+}
+
+/****************************************************************************/
+/*
+In this example, rule 14 has a higher specificity. Although rule 14 is a type
+selector with the lowest specificity value, rule 13 uses '*' which has no
+specificity value
+*/
+/* Rule 13 */
+* {
+    color: black;
+}
+
+/* Rule 14 */
+h1 {
+    color: orange;
+}
+
+/***************************************************************************/
+/*
+Despite the 'parent' having a higher specificity with an ID, the 'child'
+element would have the
+
+color: blue;
+
+style applied since that declaration directly targets it, while
+
+color: red;
+
+from the parent is only inherited
+*/
+/* Rule 15 */
+#parent {
+    color: red;
+}
+
+/* Rule 16 */
+.child {
+    color: blue;
+}
+
+/***************************************************************************/
