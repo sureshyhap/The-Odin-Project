@@ -1,0 +1,40 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+img.lasagna-pic,
+img.paneer-pic,
+img.tofu-pic {
+    height: auto;
+    width: 450px;
+}
+
+h2.what-is {
+    font-style: italic;
+}
+
+p {
+    white-space: pre-line;
+}
+
+h2.ingredients,
+h2.steps {
+    text-decoration: underline;
+}
+
+ol ol {
+    position: relative;
+    left: -21px;
+}
+
+ol li {
+    margin: 2px;
+}
+
+ol li ol li {
+    margin: 3px;
+}
