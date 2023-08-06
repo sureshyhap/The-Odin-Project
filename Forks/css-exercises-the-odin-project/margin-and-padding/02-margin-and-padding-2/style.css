@@ -4,9 +4,10 @@ body {
 }
 
 .card {
-  width: 400px;
+  width: 500px;
   background: #fff;
   margin: 16px auto;
+  padding: 10px;
 }
 
 .title {
@@ -15,13 +16,36 @@ body {
 
 .content {
   background: #e3f4ff;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 20px 10px;
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  padding: 10px 30px;
+  font-size: inherit;
+}
+
+h1.title {
+  font-size: 1.5rem;
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+
+.title,
+.button-container {
+  padding: 10px;
+}
+
+.button-container span {
+  display: block;
 }
