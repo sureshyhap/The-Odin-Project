@@ -1,0 +1,15 @@
+* {
+    text-align: center;    
+    margin-top: 8px;
+}
+
+ul {    
+    list-style-position: inside;
+    list-style-type: "\1F372";
+    padding: 0;
+}
+
+li span {
+    position: relative;
+    left: 2px;
+}
