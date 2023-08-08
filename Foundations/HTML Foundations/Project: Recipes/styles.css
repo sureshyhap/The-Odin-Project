@@ -1,15 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 * {
+
     text-align: center;    
     margin-top: 8px;
 }
 
 ul {    
-    list-style-position: inside;
-    list-style-type: "\1F372";
+    /* list-style-position: inside; */
+    /* list-style-type: "\1F372"; */
+    list-style: none;
     padding: 0;
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 li span {
     position: relative;
     left: 2px;
+}
+
+a {
+    text-decoration: none;    
+}
+
+li img {
+    width: 200px;
+    height: auto;
+    display: inline-block;
+}
+
+li.recipe-img-link {
+    background-color:honeydew;
+    height: 200px;    
 }
