@@ -9,7 +9,6 @@ html {
 }
 
 * {
-
     text-align: center;    
     margin-top: 8px;
 }
@@ -18,8 +17,8 @@ ul {
     /* list-style-position: inside; */
     /* list-style-type: "\1F372"; */
     list-style: none;
-    padding: 0;
-    max-width: 50%;
+    
+    width: 25%;
     margin: 0 auto;
 }
 
@@ -35,10 +34,25 @@ a {
 li img {
     width: 200px;
     height: auto;
-    display: inline-block;
+    display: block;
+    
 }
 
 li.recipe-img-link {
     background-color:honeydew;
-    height: 200px;    
+    width: 400px;
+    height: 250px;
+}
+
+li.recipe-img-link.left {        
+    border: 1px solid red;
+}
+
+li.recipe-img-link.right {
+    
+}
+
+ul {
+    
+    border: 1px solid red;
 }
