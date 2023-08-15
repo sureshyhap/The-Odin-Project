@@ -34,8 +34,7 @@ a {
 li img {
     width: 200px;
     height: auto;
-    display: block;
-    
+    display: inline-block;
 }
 
 li.recipe-img-link {
@@ -45,14 +44,9 @@ li.recipe-img-link {
 }
 
 li.recipe-img-link.left {        
-    border: 1px solid red;
+    
 }
 
 li.recipe-img-link.right {
     
-}
-
-ul {
-    
-    border: 1px solid red;
 }
