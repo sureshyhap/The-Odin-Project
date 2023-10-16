@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+        <style>
+            form {
+                display: flex;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                gap: 8px;
+                width: 50%;
+                margin: 0 auto;
+            }
+            .name {
+                flex-basis: 120px;
+                flex-grow: 1;
+            }
+            .email {
+                flex-basis: 170px;
+                flex-grow: 3;
+            }
+            button {
+                flex-grow: 1;
+                flex-basis: 70px;
+            }
+        </style>
+        <title>Nice Form</title>
+    </head>
+    <body>
+        <form>
+            <label class="name" for="name-field">
+                Name:
+                <input id="name-field">
+            </label>
+            <label class="email" for="email-field">
+                Email:
+                <input id="email-field" type="email">
+            </label>
+            <button>
+                Submit
+            </button>
+        </form>
+    </body>
+</html>

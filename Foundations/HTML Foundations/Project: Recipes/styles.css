@@ -35,6 +35,7 @@ li img {
     width: 200px;
     height: auto;
     display: inline-block;
+    margin: 0px;
 }
 
 li.recipe-img-link {
