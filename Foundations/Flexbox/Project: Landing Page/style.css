@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, 
+h1, 
+h2, 
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.color1,
+.color5 {
+    background-color: #1F2937;
+}
+
+.color3 {
+    background-color: #E5E7EB;
+}
+
+.intro-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.intro-text p,
+.header, a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header h3 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+button,
+.signup-banner {
+    background-color: #3882F6;
+}
+
+.color2 h2,
+.color3 p:first-child {
+    color: #1F2937;
+}
+
+.color2 h2 {
+    font-size: 36px;
+    font-weight: extra-bold;
+}
+
+.color3 p:first-child {
+    font-size: 36px;
+    font-weight: light-italic;
+}
+
+.color1 {
+    height: 80vh;
+}
+
+.hero {
+    width: 80%;
+    height: 80%;
+}
+
+.header,
+.introduction {
+    /*padding: 1% 15% 10%;*********************/
+}
+
+.header,
+.introduction {
+    display: flex;
+}
+
+.header {
+    gap: 25px;
+}
+
+.header h3 {
+    flex: 1;
+}
