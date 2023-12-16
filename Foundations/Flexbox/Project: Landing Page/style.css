@@ -18,6 +18,10 @@ h3 {
     padding: 0;
 }
 
+img {
+    min-width: 0;
+}
+
 .color1,
 .color5 {
     background-color: #1F2937;
@@ -69,24 +73,32 @@ button,
 }
 
 .hero {
-    width: 80%;
+    width: 60%;
     height: 80%;
+    margin: 0 auto;
 }
 
 .header,
-.introduction {
-    /*padding: 1% 15% 10%;*********************/
-}
-
-.header,
-.introduction {
+.introduction,
+.intro-text {
     display: flex;
 }
 
 .header {
     gap: 25px;
+    margin-bottom: 10%;
+    padding-top: 1%;
 }
 
-.header h3 {
+.header h3,
+.introduction .intro-text * {
     flex: 1;
+}
+
+.introduction .intro-text {
+    flex-direction: column;
+}
+
+.introduction > * {
+    flex: 1;    
 }
