@@ -156,9 +156,19 @@ button,
     align-items: center;
     padding-left: 25vw;
     padding-right: 25vw;
+    flex-direction: column;
 }
 
 .color3 p:first-child {
     font-style: italic;
     font-weight: 100;
+    margin: 0;
+    width: 90%;
+}
+
+.color3 p:last-child {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-left: 550px;
 }
