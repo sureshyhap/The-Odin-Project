@@ -4,8 +4,7 @@ html {
 
 * {
     box-sizing: inherit;
-    font-family: Arial, sans-serif;
-}
+    font-family: "Roboto", sans-serif;
 
 a {
     text-decoration: none;
@@ -68,7 +67,7 @@ button,
 
 .color3 p:first-child {
     font-size: 36px;
-    /*font-weight: light-italic;*/
+    font-style: italic;
 }
 
 .color1 {
@@ -162,18 +161,17 @@ button,
     flex-direction: column;
 }
 
-.color3 p:first-child {
-    font-style: italic;
-    font-weight: 100;
+.color3 p:first-child {    
+    font-weight: 300;
     margin: 0;
-    width: 90%;
+    width: 87%;
 }
 
 .color3 p:last-child {
-    margin: 0;
+    margin-top: 0;
+    margin-left: 500px;
     font-weight: bold;
-    font-size: 1.25rem;
-    margin-left: 550px;
+    font-size: 1.5rem;    
 }
 
 .color4 {
