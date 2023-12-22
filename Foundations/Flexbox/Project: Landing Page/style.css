@@ -75,7 +75,7 @@ button,
 }
 
 .color1 .hero {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -93,7 +93,7 @@ button,
 
 .header {
     gap: 25px;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     padding-top: 2%;
 }
 
@@ -103,14 +103,15 @@ button,
 
 .introduction > .intro-text {
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
+    margin-right: 100px;
 }
 
 .introduction > * {
     flex: 1;
 }
 
-.introduction .intro-text > button {
+.intro-text > button {
     color: white;
     padding: 10px 40px;
     border-radius: 10px;
@@ -216,4 +217,9 @@ button,
     font-size: 1.125rem;
     justify-content: center;
     align-items: center;
+}
+
+
+button:hover {
+    border: 1px solid white;
 }
