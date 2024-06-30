@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a0bd3ee369e84f88",
+        "id": "c8ef88edda4fae0d",
         "type": "tabs",
         "children": [
           {
-            "id": "41bb43dd721630cc",
+            "id": "df0ff8a8ac6a2f22",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript Basics/Fundamentals Part 1.md",
+                "file": "Javascript Basics/Fundamentals Part 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript Basics/Fundamentals Part 1.md",
+                "file": "Javascript Basics/Fundamentals Part 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript Basics/Fundamentals Part 1.md",
+                "file": "Javascript Basics/Fundamentals Part 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript Basics/Fundamentals Part 1.md"
+                "file": "Javascript Basics/Fundamentals Part 2.md"
               }
             }
           }
@@ -133,7 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -146,23 +146,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "41bb43dd721630cc",
+  "active": "df0ff8a8ac6a2f22",
   "lastOpenFiles": [
-    "Untitled 1.md",
+    "Screenshot from 2024-06-30 13-56-06.png",
+    "Screenshot from 2024-06-30 13-54-09 2.png",
+    "Screenshot from 2024-06-30 13-54-09 1.png",
+    "Screenshot from 2024-06-30 13-54-09.png",
     "Javascript Basics/Fundamentals Part 1.md",
-    "Screenshot from 2023-12-28 09-25-09.png",
+    "Javascript Basics/Fundamentals Part 2.md",
     "Untitled.md",
-    "Screenshot from 2023-12-24 09-12-32.png",
-    "Screenshot from 2023-12-23 10-27-20.png",
+    "Untitled 1.md",
+    "Screenshot from 2023-10-05 12-05-56.png",
+    "Screenshot from 2024-01-29 16-35-53.png",
+    "Screenshot from 2024-01-29 16-35-21.png",
+    "00-basic-terminology.svg",
+    "gap-1.svg",
+    "Screenshot from 2023-09-29 17-32-11.png",
+    "Screenshot from 2024-01-12 10-51-15.png",
     "Flexbox/Alignment/Assignment/3/A Complete Guide to Flexbox.md",
     "Javascript Basics",
-    "Screenshot from 2023-10-08 08-22-27.png",
-    "Screenshot from 2023-10-08 08-22-07.png",
-    "Screenshot from 2023-10-08 08-11-09.png",
-    "Screenshot from 2023-10-08 08-01-44.png",
-    "align-self.svg",
-    "Screenshot from 2023-10-08 07-55-26.png",
-    "Screenshot from 2023-10-08 07-52-07.png",
     "Flexbox/Alignment/Assignment/2/Typical use cases for flexbox.md",
     "Flexbox/Alignment/Assignment/3",
     "Flexbox/Alignment/Untitled.md",

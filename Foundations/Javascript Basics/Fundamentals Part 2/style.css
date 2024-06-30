@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    width: 500px;
+    padding: 0px;
+    gap: 2px;
+}
+
+li {
+    background-color: #4A2DB6;
+    flex-basis: 20%;
+    padding: 2px;
+}
