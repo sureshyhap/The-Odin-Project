@@ -1271,3 +1271,124 @@ select.addEventListener("change", () => {
 });
 ```
 
+![[Screenshot from 2024-07-01 13-01-50.png]]
+
+![[Screenshot from 2024-07-01 13-01-42.png]]
+
+--------------------------
+## More color choices
+
+Instead of toggling between black and white colors, we can add more:
+
+```
+const select = document.querySelector('select');
+const html = document.querySelector('.output');
+
+select.addEventListener('change', () => {
+  const choice = select.value;
+
+  switch(choice) {
+    case 'black':
+      update('black','white');
+      break;
+    case 'white':
+      update('white','black');
+      break;
+    case 'purple':
+      update('purple','white');
+      break;
+    case 'yellow':
+      update('yellow','purple');
+      break;
+    case 'psychedelic':
+      update('lime','purple');
+      break;
+  }
+});
+
+function update(bgColor, textColor) {
+  html.style.backgroundColor = bgColor;
+  html.style.color = textColor;
+}
+```
+
+![[Screenshot from 2024-07-01 13-04-54.png]]
+
+![[Screenshot from 2024-07-01 13-04-47 1.png]]
+
+-------------------
+
+`includes()` is a string method that tests if a different string is a substring of the string.
+
+---------------------------
+
+The following example prints a message depending on what score range your test score lies and whether the scoring machine is on or not:
+
+#### HTML
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <p class="display-score"></p>
+        <div class="scoring"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
+```
+#### JS
+```
+function getRandomInt(start, end) {
+    return Math.random() * (end - start) + start;
+}
+
+let machineActive = true;
+let score = getRandomInt(0, 100);
+let response;
+
+if (machineActive) {
+    if (score < 0 || score > 100) {
+        response = "This is not possible, an error has occurred.";
+    }
+    else if (score < 20) {
+        response = "That was a terrible score — total fail!";
+    }
+    else if (score < 40) {
+        response = "You know some things, but it\'s a pretty bad score. Needs improvement.";
+    }
+    else if (score < 70) {
+        response = "You did a passable job, not bad!";
+    }
+    else if (score < 90) {
+        response = "That\'s a great score, you really know your stuff."
+    }
+    else {
+        response = "What an amazing score! Did you cheat? Are you for real?";
+    }
+}
+else {
+    response = "Machine is inactive. Please turn the machine on!";
+}
+
+const scoring_div = document.querySelector("div.scoring");
+const print_score = document.querySelector("p.display-score");
+print_score.textContent = `You got a ${score}.`;
+print_score.style.fontWeight = "bold";
+let statement = document.createElement("p");
+statement.textContent = response;
+scoring_div.appendChild(statement);
+```
+
+![[Screenshot from 2024-07-01 14-36-46 1.png]]
+
+![[Screenshot from 2024-07-01 14-37-23.png]]
+
+-------------------
+
+"0" is considered true!
+
+In a switch case statement block, both the switch and the cases can be any arbitrary expressions. The equality check is strict (like `===`)
+
