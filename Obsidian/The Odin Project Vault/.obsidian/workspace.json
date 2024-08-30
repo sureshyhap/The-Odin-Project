@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript Basics/Data Types and Conditionals.md",
+                "file": "Javascript Basics/Function Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript Basics/Data Types and Conditionals.md",
+                "file": "Javascript Basics/Function Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript Basics/Data Types and Conditionals.md",
+                "file": "Javascript Basics/Function Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript Basics/Data Types and Conditionals.md"
+                "file": "Javascript Basics/Function Basics.md"
               }
             }
           }
@@ -146,20 +146,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c73d71d6ccd675d0",
+  "active": "df0ff8a8ac6a2f22",
   "lastOpenFiles": [
-    "Javascript Basics/Variables and Operators.md",
+    "Screenshot from 2024-08-30 18-25-43.png",
+    "Screenshot from 2024-08-30 18-22-50.png",
+    "Screenshot from 2024-08-30 18-19-07.png",
+    "Screenshot from 2024-08-30 18-11-53.png",
+    "Screenshot from 2024-08-30 18-09-08.png",
+    "Screenshot from 2024-08-26 15-59-25.png",
+    "Screenshot from 2024-08-26 15-57-44.png",
+    "Screenshot from 2024-08-26 15-56-37.png",
+    "Screenshot from 2024-08-26 15-54-16.png",
+    "Screenshot from 2024-08-26 15-53-01.png",
+    "Screenshot from 2024-08-26 15-50-23.png",
+    "Javascript Basics/JavaScript Developer Tools.md",
+    "Javascript Basics/Function Basics.md",
     "Javascript Basics/Data Types and Conditionals.md",
-    "Screenshot from 2024-07-01 14-37-23.png",
-    "Screenshot from 2024-07-01 14-36-46 1.png",
-    "Screenshot from 2024-07-01 14-36-46.png",
-    "Screenshot from 2024-07-01 13-04-47 1.png",
-    "Screenshot from 2024-07-01 13-04-47.png",
-    "Screenshot from 2024-07-01 13-04-54.png",
-    "Screenshot from 2024-07-01 13-01-42.png",
-    "Screenshot from 2024-07-01 13-01-50.png",
-    "Screenshot from 2024-06-30 13-56-06.png",
-    "Screenshot from 2024-06-30 13-54-09 2.png",
+    "Javascript Basics/Variables and Operators.md",
     "Untitled.md",
     "Untitled 1.md",
     "Flexbox/Alignment/Assignment/3/A Complete Guide to Flexbox.md",
