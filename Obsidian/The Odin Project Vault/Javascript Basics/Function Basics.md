@@ -484,3 +484,168 @@ Function to run if the answer is "No"
 
 The function should ask the `question` and, depending on the user's answer, call `yes()` or `no()`:
 
+![[Screenshot from 2024-09-22 12-53-26.png]]
+
+In practice, such functions are useful. The major difference between a real-life `ask` and the example above is that real-life functions use more complex ways to interact with the user than a simple `confirm`. In the browser, such functions usually draw a nice-looking question window.
+
+The arguments`showOk` and `showCancel` of `ask` are called *callback functions*.
+
+The idea is that we pass a function and expect it to be "called back" later if necessary. In our case, `showOk` becomes the callback for the "yes" answer, and `showCancel` for "no" answer.
+
+We can use Function Expressions to write an equivalent, shorter function:
+
+![[Screenshot from 2024-09-22 12-59-10.png]]
+
+Here, functions are declared right inside the `ask(...)` call. They have no name, and so are called *anonymous*. Such functions are not accessible outside of `ask` (because they are not assigned to variables), but that's just what we want here.
+
+Such code is in the spirit of JavaScript.
+
+### Function Expression vs. Function Declaration
+
+A first key difference between Function Declarations and Expressions is the syntax.
+
+#### Function Declaration
+
+A function declared as a separate statement, in the main code flow:
+
+![[Screenshot from 2024-09-22 13-08-33.png]]
+
+#### Function Expression
+
+A function created inside an expression or inside another syntax construct. Here the function is created on the right side of the assignment:
+
+![[Screenshot from 2024-09-22 13-10-37.png]]
+
+---------------------------------------
+
+The more subtle difference is *when* a function is created by the JavaScript Engine.
+
+**A Function Expression is created when the execution reaches it and is usable only from that moment.**
+
+Once the execution flow passes to the right side of the assignment `let sum = function...` - the function is created and can be used (assigned, called, etc.) from now on.
+
+Function Declarations are different.
+
+**A Function Declaration can be called earlier than it is defined.**
+
+For example, a global Function Declaration is visible in the whole script, no matter where it is.
+
+That's due to internal algorithms. When JavaScript prepares to run the script, it first looks for global Function Declarations in it and creates the functions. We can think of it as an "initialization stage".
+
+And after all Function Declarations are processed, the code is executed. So it has access to these functions.
+
+For example, this works:
+
+![[Screenshot from 2024-09-22 13-17-47.png]]
+
+The Function Declaration `sayHi` is created when JavaScript is preparing to start the script and so is visible everywhere in it.
+
+A Function Expression wouldn't work:
+
+![[Screenshot from 2024-09-22 13-19-24.png]]
+
+Function Expressions are created when the execution reaches them. That would happen only in the line `(*)`. Too late.
+
+-------------------------------
+
+Another special feature of Function Declarations is their block scope.
+
+**In strict mode, when a Function Declaration is within a code block, it's visible everywhere inside that block. But not outside of it.**
+
+For instance, let's imagine we need to declare a function `welcome()` depending on the `age` variable that we get during runtime. We will then use it later (outside the conditional if statement).
+
+If we use Function Declaration, it won't work as intended:
+
+![[Screenshot from 2024-09-22 13-27-27.png]]
+
+That's because a Function Declaration is only visible inside the code block in which it resides.
+
+Another example:
+
+![[Screenshot from 2024-09-22 13-31-00.png]]
+
+The correct approach would be to use a Function Expression and assign `welcome` to the variable that is declared outside of `if` and has the proper visibility.
+
+This code works as intended:
+
+![[Screenshot from 2024-09-22 13-33-38.png]]
+
+We could simplify it further using the `?` ternary operator:
+
+![[Screenshot from 2024-09-22 13-37-10.png]]
+
+#### When to choose which?
+
+As a rule of thumb, when we need to declare a function, the first thing to consider is Function Declaration syntax. It gives more freedom in how to organize our code, because we can call such functions before they are declared.
+
+That's also better for readability as it's easier to look up `function f(...) {...}` in the code than `let f = function(...) {...}`. Function Declarations are more "eye-catching".
+
+But if a Function Declarations does not suit us for some reason, or we need a conditional declaration, then Function Expression should be used.
+
+### Arrow functions, the basics
+
+There's another very simple and concise syntax for creating functions, that's often better than doing Function Expressions.
+
+These are "arrow functions" that look like: 
+
+![[Screenshot from 2024-09-22 13-44-34.png]]
+
+This creates a function `func` that accepts arguments `arg1..argN`, then evaluates the `expression`on the right side with their use and returns its result.
+
+It's a shorter version of:
+
+![[Screenshot from 2024-09-22 13-46-27.png]]
+
+A concrete example:
+
+![[Screenshot from 2024-09-22 13-47-47.png]]
+
+`(a, b) => a + b` means a function that accepts two arguments named `a` and `b`. Upon execution, it evaluates the expression `a + b` and returns the result.
+
+- If we have only one argument, then we can omit the parentheses around the parameter:
+
+![[Screenshot from 2024-09-22 13-50-30.png]]
+
+If there are no arguments, parentheses are empty but must be included still:
+
+![[Screenshot from 2024-09-22 13-51-40.png]]
+
+Arrow functions can be used in the same way as Function Expressions. For example, to dynamically create a function:
+
+![[Screenshot from 2024-09-22 13-52-42 1.png]]
+
+#### Multiline arrow functions
+
+Sometimes we need a more complex function, with multiple expressions and statements. In this case, we enclose them in curly braces. The major difference is that curly braces require a `return` within them to return a value (just like a regular function does).
+
+Like this:
+
+![[Screenshot from 2024-09-22 13-56-11.png]]
+
+There are other features of arrow functions which will be discussed later.
+
+---------------------------
+## JavaScript Call Stack
+
+### Stack Overflow
+
+The call stack has a fixed size, depending on the implementation of the host environment, either the web browser or Node.js.
+
+If there are too many execution contexts on the call stack, stack overflow will occur.
+
+For instance, when a recursive function has no exit condition, the JavaScript engine will issue a stack overflow error.
+
+### Asynchronous JavaScript
+
+JavaScript is a single-threaded programming language. This means that the JavaScript engine has only one call stack. Therefore, it can only do one thing at a time.
+
+When executing a script, the JavaScript engine executes code from top to bottom, line by line. In other words, it is synchronous.
+
+Asynchronous means the JavaScript engine can execute other tasks while waiting for another task to be completed. For example, the JavaScript engine can:
+
+- Request for data from a remote server
+- Display a spinner
+- When the data is available, display it on the webpage
+
+To do this, the JavaScript engine uses an event loop.
+
