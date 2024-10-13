@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript Basics/Problem Solving/Problem Solving.md",
+                "file": "Javascript Basics/Understanding Errors.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript Basics/Problem Solving/Problem Solving.md",
+                "file": "Javascript Basics/Understanding Errors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript Basics/Problem Solving/Problem Solving.md",
+                "file": "Javascript Basics/Understanding Errors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript Basics/Problem Solving/Problem Solving.md"
+                "file": "Javascript Basics/Understanding Errors.md"
               }
             }
           }
@@ -148,11 +148,17 @@
   },
   "active": "df0ff8a8ac6a2f22",
   "lastOpenFiles": [
+    "Screenshot from 2024-10-10 20-16-20.png",
+    "Screenshot from 2024-10-10 20-10-20.png",
+    "Screenshot from 2024-10-10 19-24-15.png",
+    "Screenshot from 2024-10-06 14-35-31.png",
+    "Javascript Basics/Problem Solving.md",
+    "Javascript Basics/Understanding Errors.md",
+    "Javascript Basics/JavaScript Developer Tools.md",
+    "Javascript Basics/Variables and Operators.md",
     "Pasted image 20241005155732.png",
     "Pasted image 20241005155335.png",
     "Javascript Basics/Data Types and Conditionals.md",
-    "Javascript Basics/Problem Solving/Problem Solving.md",
-    "Javascript Basics/Variables and Operators.md",
     "01-container.svg",
     "align-items.svg",
     "Javascript Basics/Function Basics.md",
@@ -160,11 +166,6 @@
     "Screenshot from 2024-09-22 13-56-11.png",
     "Screenshot from 2024-09-22 13-52-42 1.png",
     "Screenshot from 2024-09-22 13-52-42.png",
-    "Screenshot from 2024-09-22 13-51-40.png",
-    "Screenshot from 2024-09-22 13-50-30.png",
-    "Screenshot from 2024-09-22 13-47-47.png",
-    "Screenshot from 2024-09-22 13-46-27.png",
-    "Javascript Basics/JavaScript Developer Tools.md",
     "Untitled.md",
     "Untitled 1.md",
     "Flexbox/Alignment/Assignment/3/A Complete Guide to Flexbox.md",
