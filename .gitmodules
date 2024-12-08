@@ -1,0 +1,3 @@
+[submodule "Forks/javascript-exercises-the-odin-project"]
+	path = Forks/javascript-exercises-the-odin-project
+	url = git@github.com:sureshyhap/javascript-exercises-the-odin-project.git
