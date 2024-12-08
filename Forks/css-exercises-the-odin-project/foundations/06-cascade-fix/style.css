@@ -8,16 +8,27 @@ body{
   font-weight: 800;
 }
 
+<<<<<<< HEAD
 .para {
   font-size: 22px;
 }
 
+=======
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
+<<<<<<< HEAD
 .button.confirm {
+=======
+.para {
+  font-size: 22px;
+}
+
+.confirm {
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
   background: green;
   color: white;
   font-weight: bold;
@@ -29,14 +40,26 @@ body{
   font-size: 20px;
 }
 
+<<<<<<< HEAD
+=======
+.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
 }
+<<<<<<< HEAD
 
 .text > .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
+=======
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139

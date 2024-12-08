@@ -4,10 +4,16 @@ body {
 }
 
 .card {
+<<<<<<< HEAD
   width: 500px;
   background: #fff;
   margin: 16px auto;
   padding: 10px;
+=======
+  width: 400px;
+  background: #fff;
+  margin: 16px auto;
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
 }
 
 .title {
@@ -16,21 +22,28 @@ body {
 
 .content {
   background: #e3f4ff;
+<<<<<<< HEAD
   margin-bottom: 10px;
   font-size: 1.25rem;
   line-height: 1;
   padding: 20px 10px;
+=======
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
 }
 
 .button-container {
   background: #e3f4ff;
+<<<<<<< HEAD
   text-align: center;
   font-size: 1.25rem;
+=======
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+<<<<<<< HEAD
   padding: 10px 30px;
   font-size: inherit;
 }
@@ -48,4 +61,6 @@ h1.title {
 
 .button-container span {
   display: block;
+=======
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
 }

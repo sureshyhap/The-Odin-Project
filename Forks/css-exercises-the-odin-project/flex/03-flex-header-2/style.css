@@ -9,11 +9,17 @@ body {
 }
 
 .header {
+<<<<<<< HEAD
   padding: 8px;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
   display: flex;
+=======
+  background: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
 }
 
 .profile-image {
@@ -47,6 +53,7 @@ a {
 
 ul {
   list-style-type: none;
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   align-items: center;
@@ -66,3 +73,6 @@ div.header > .left-side {
 div.header > .right-side {
   align-items: center;
 }
+=======
+}
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139

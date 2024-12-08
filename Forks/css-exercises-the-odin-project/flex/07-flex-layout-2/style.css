@@ -2,14 +2,18 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
+=======
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+<<<<<<< HEAD
   font-weight: 900;
   font-size: 2em;
   box-sizing: border-box;
@@ -21,12 +25,15 @@ body {
 .content {
   flex: 1;
   display: flex;
+=======
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,12 +53,21 @@ body {
   padding: 32px;
   max-width: 70%;
   justify-content: space-evenly;
+=======
+}
+
+.sidebar {
+  width: 300px;
+  background: royalblue;
+  box-sizing: border-box;
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+<<<<<<< HEAD
   flex-basis: 350px;
   height: 40%;
   padding: 16px;
@@ -68,4 +84,6 @@ a {
   text-decoration: none;
   color: white;
   font-size: 24px;
+=======
+>>>>>>> 07e096da6ca4a659dc8ac1b5c6e67bf27b4cb139
 }
